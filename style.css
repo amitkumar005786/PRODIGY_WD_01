@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.content {
+  padding-top: 70px; /* Ensure there's space for the fixed navbar */
+}
+
+section {
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
+  margin: 0 -12px 0 -12px;
+}
+
+section:nth-of-type(odd) {
+  background-color: #ab9a6a;
+}
+
+section:nth-of-type(even) {
+  background-color: #d6ceb6;
+}
+
+/* Style for navbar when scrolled */
+.scrolled {
+  background-color: rgba(240, 60, 60, 0.9);
+  padding: 10px 0;
+  margin: -12px -12px -12px -12px;
+  /* padding: 0 !important; */
+}
